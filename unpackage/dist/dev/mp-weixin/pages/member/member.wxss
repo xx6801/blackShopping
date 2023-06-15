@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.bg {
+  width: 100%;
+  height: 305rpx;
+  background-color: #b50e03;
+  color: white;
+  border-radius: 0 0 150rpx 150rpx;
+}
+.line {
+  height: 56rpx;
+  background-color: #b50e03;
+}
+.head {
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rq {
+  width: 90%;
+  height: 166rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25rpx 25rpx 0 0;
+  border: 1rpx solid #f0f0f0;
+  /* border-bottom: 2rpx solid #ccc; */
+}
+.touxiang {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 3rpx 3rpx 6rpx;
+  margin: -50rpx 0 5rpx 0;
+  border: 10rpx solid #fff;
+}
+.nicheng {
+  font-size: 27rpx;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: black;
+}
+/* 收藏 */
+.count {
+  width: 90%;
+  height: 97.9rpx;
+  display: flex;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 0 0 25rpx 25rpx;
+  border: 1rpx solid #f0f0f0;
+  box-shadow: 0 10rpx 5rpx #f0f0f0;
+}
+.desc {
+  flex: 1;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  text-align: center;
+  margin-top: 6px;
+  color: #333;
+}
+/* 签到 */
+.nav {
+  height: 150rpx;
+  padding-top: 20rpx;
+  background-color: #fff;
+}
+.nav-1 {
+  width: 90%;
+  height: 150rpx;
+  border-radius: 25rpx 25rpx 25rpx 25rpx;
+  background-color: #ffffff;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  border: 1rpx solid #f0f0f0;
+  box-shadow: 0 5rpx 5rpx #f0f0f0;
+}
+.nav-item {
+  flex: 1;
+  font-size: 24rpx;
+  margin-top: 25rpx;
+  margin-bottom: 20rpx;
+  color: #333;
+}
+.hr {
+  width: 100%;
+  height: 20rpx;
+}
+/* 设置 */
+.sz {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1rpx solid #f0f0f0;
+  border-radius: 25rpx 25rpx 25rpx 25rpx;
+  box-shadow: 0 5rpx 5rpx #f0f0f0;
+}
+.shezhi {
+  padding-top: 5rpx;
+  color: #999;
+  font-size: 24rpx;
+  padding-left: 70rpx;
+}
+.xx {
+  display: flex;
+}
+.wz1 {
+  font-size: 28rpx;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-left: 30rpx;
+}
+.jt {
+  font-size: 28rpx;
+  position: absolute;
+  right: 50rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #888;
+}
+.tc {
+  height: 200rpx;
+}
+.wz2 {
+  color: #b50e03;
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+}
+

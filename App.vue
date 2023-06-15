@@ -13,6 +13,7 @@
 </script>
 
 <style>
+	@import './font/iconfont.css';
 	/*每个页面公共css */
 	@font-face {font-family: "iconfont";
 	  src: url('https://gitee.com/destiny001/iconfont/iconfont.eot?t=1576844226174'); /* IE9 */
