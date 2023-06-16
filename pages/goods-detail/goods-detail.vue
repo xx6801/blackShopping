@@ -83,12 +83,14 @@
 					url:'/api/goods/getinfo/'+this.id
 				})
 				this.info = res.data.message[0]
+				console.log(res)
 			},
 			async getDetailContent(){
 				const res = await this.$myRuquest({
 					url:'/api/goods/getdesc/'+this.id
 				})
 				this.content = res.data.message[0].content
+				console.log(res)
 			},
 			onClick(e){
 				uni.showToast({

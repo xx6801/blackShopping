@@ -3,16 +3,16 @@
 		<view class="bg">
 		    <!-- 头像 -->
 		    <view class="head">
-		    <view class="line"></view>
-		    <view class="rq">
-		              <view class="touxiang">
-		            <open-data type="userAvatarUrl"></open-data>
-		        </view>
-		        <view class="nicheng">
-		            <open-data type="userNickName" style="text-align: center;"></open-data>
-		            <view style="color: #999;">
-		                12456789@qq.com
-		            </view>
+				<view class="line"></view>
+				<view class="rq">
+		            <view class="touxiang">
+						<image src="../../static/素材/hmlogo.png" style="width: 100%;height: 100%;"></image>
+					</view>
+					<view class="nicheng">
+						<text style="text-align: center;">黑马</text>
+						<view style="color: #999;">
+							18145625869@qq.com
+						</view>
 		        </view>
 		    </view> 
 		</view>
@@ -30,8 +30,6 @@
 		        <view style="color: #999;">动态</view>
 		     </view>
 		  </view>
-		   
-		  
 		</view>
 		  <!-- 签到 -->
 		<view class="nav">
@@ -55,10 +53,6 @@
 		<view class="shezhi">
 		     会员中心
 		</view>
-		<view class="hr"></view>
-		
-		
-		
 		<view class="sz">
 		<!-- 会员中心 -->
 		<view class="xx" style="border-bottom: 1rpx solid #f0f0f0;">
@@ -82,16 +76,11 @@
 		</view>
 		</view>
 		<view class="hr"></view>
-		
-		
-		
 		<!-- 设置 -->
 		<view class="shezhi">
 		     辅助功能
 		</view>
 		<view class="hr"></view>
-		
-		
 		<view class="sz">
 		<!-- 消息通知 -->
 		<view class="xx" style="border-bottom: 1rpx solid #f0f0f0;">
@@ -121,21 +110,18 @@
 		   </view>
 		</view>
 		
-		<view class="xx" bindtap="gopage">
-		   <view class="wz1" >系统设置</view>
+		<view class="xx" @click="goSetClick">
+		   <view class="wz1">系统设置</view>
 		   <view class="jt">
 		      <text>></text>
 		   </view>
 		</view>
-		
 		</view>
 		<!-- 退出 -->
-		<view class="tc" bindtap="fanhui">
-		   <view class="wz2">切换账号</view>
-		   <view class="wz2">退出</view>
+		<view class="tc">
+		   <view class="wz2"@click="goLoginClick">切换账号</view>
+		   <view class="wz2"@click="goLoginClick">退出</view>
 		</view>
-		
-		
 		<view class="hr"></view>
 	</view>
 </template>
@@ -149,30 +135,38 @@
 			}
 		},
 		methods: {
-			
+			goSetClick(id){
+				uni.navigateTo({
+					url:'/pages/set/set?id='+id
+				})
+			},
+			goLoginClick(id){
+				uni.navigateTo({
+					url:'/pages/login/login?id='+id
+				})
+			}
 		}
 	}
 </script>
 
 <style lang="scss">
-	.bg{
+.bg{
 	    width: 100%;
 	    height: 305rpx;
 	    background-color: $shop-color;
 	    color: white;
 	    border-radius: 0 0 150rpx 150rpx;
-	}
-	.line{
-	    height: 56rpx;
-	    background-color: $shop-color;
-	}
-	.head{
+		.head{
 	    height: 200rpx;
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
 	}
-	.rq{
+		
+	}
+	
+
+.rq{
 	    width: 90%;
 	    height: 166rpx;
 	    display: flex;
@@ -183,7 +177,7 @@
 	    border: 1rpx solid #f0f0f0;
 	    /* border-bottom: 2rpx solid #ccc; */
 	}
-	.touxiang{
+.touxiang{
 	    width: 100rpx;
 	    height: 100rpx;
 	    border-radius: 50%;
@@ -192,7 +186,7 @@
 	    margin: -50rpx 0 5rpx 0;
 	    border: 10rpx solid #fff;
 	}
-	.nicheng{
+.nicheng{
 	    font-size: 27rpx;
 	    display: flex;
 	    flex-wrap: wrap;
@@ -200,7 +194,7 @@
 	    color: black;
 	}
 	/* 收藏 */
-	.count{
+.count{
 	    width: 90%;
 	    height: 97.9rpx;
 	    display: flex;
@@ -210,7 +204,7 @@
 	    border: 1rpx solid #f0f0f0;
 	    box-shadow: 0 10rpx 5rpx #f0f0f0;
 	}
-	.desc{
+.desc{
 	    flex: 1;
 	    font-size: 28rpx;
 	    line-height: 40rpx;
@@ -219,12 +213,12 @@
 	    color: #333;
 	}
 	/* 签到 */
-	.nav{
+.nav{
 	    height: 150rpx;
 	    padding-top: 20rpx;
 	    background-color: #fff;
 	}
-	.nav-1{
+.nav-1{
 	    width: 90%;
 	    height: 150rpx;
 	    border-radius: 25rpx 25rpx 25rpx 25rpx;
@@ -235,19 +229,19 @@
 	    border: 1rpx solid #f0f0f0;
 	    box-shadow: 0 5rpx 5rpx #f0f0f0;
 	}
-	.nav-item{
+.nav-item{
 	    flex: 1;
 	    font-size: 24rpx;
 	    margin-top: 25rpx;
 	    margin-bottom: 20rpx;
 	    color: #333;
 	}
-	.hr{
+.hr{
 	    width: 100%;
 	    height: 20rpx;
 	}
 	/* 设置 */
-	.sz{
+.sz{
 	    width: 90%;
 	    display: flex;
 	    flex-direction: column;
@@ -256,22 +250,22 @@
 	    border-radius: 25rpx 25rpx 25rpx 25rpx;
 	    box-shadow: 0 5rpx 5rpx #f0f0f0;
 	}
-	.shezhi{
+.shezhi{
 	    padding-top: 5rpx;
 	    color: #999;
 	    font-size: 24rpx;
 	    padding-left: 70rpx;
 	}
-	.xx{
+.xx{
 	    display: flex;
 	}
-	.wz1{
+.wz1{
 	    font-size: 28rpx;
 	    padding-top: 30rpx;
 	    padding-bottom: 30rpx;
 	    padding-left: 30rpx;
 	}
-	.jt{
+.jt{
 	    font-size: 28rpx;
 	    position: absolute;
 	    right: 50rpx;
@@ -279,13 +273,19 @@
 	    line-height: 100rpx;
 	    color: #888;
 	}
-	.tc{
+.tc{
 	    height: 200rpx;
 	}
-	.wz2{
+.wz2{
 	    color: $shop-color;
 	    display: flex;
 	    justify-content: center;
 	    margin-top: 40rpx;
+	}
+	
+	
+	.line{
+	height: 56rpx;
+	background-color: $shop-color;
 	}
 </style>

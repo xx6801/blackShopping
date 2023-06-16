@@ -65,6 +65,22 @@
             }
             
         }
+        ,{
+            "path" : "pages/set/set",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "编辑资料"
+            }
+            
+        }
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -95,7 +111,7 @@
 				"selectedIconPath": "static/icon/cart-active.png"
 			},
 			{
-				"text": "会员",
+				"text": "我的",
 				"pagePath": "pages/member/member",
 				"iconPath": "static/icon/member.png",
 				"selectedIconPath": "static/icon/member-active.png"
