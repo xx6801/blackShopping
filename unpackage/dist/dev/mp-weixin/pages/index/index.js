@@ -101,7 +101,7 @@ var components
 try {
   components = {
     goodsList: function () {
-      return __webpack_require__.e(/*! import() | components/goods-list/goods-list */ "components/goods-list/goods-list").then(__webpack_require__.bind(null, /*! @/components/goods-list/goods-list.vue */ 105))
+      return __webpack_require__.e(/*! import() | components/goods-list/goods-list */ "components/goods-list/goods-list").then(__webpack_require__.bind(null, /*! @/components/goods-list/goods-list.vue */ 125))
     },
   }
 } catch (e) {
@@ -169,7 +169,7 @@ var _regenerator = _interopRequireDefault(__webpack_require__(/*! @babel/runtime
 var _asyncToGenerator2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/asyncToGenerator */ 42));
 var goodsList = function goodsList() {
   __webpack_require__.e(/*! require.ensure | components/goods-list/goods-list */ "components/goods-list/goods-list").then((function () {
-    return resolve(__webpack_require__(/*! ../../components/goods-list/goods-list.vue */ 105));
+    return resolve(__webpack_require__(/*! ../../components/goods-list/goods-list.vue */ 125));
   }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
 };
 var _default = {

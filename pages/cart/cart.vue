@@ -8,7 +8,7 @@
 		                    <li class="clearfloat">
 		                        <span>
 									<label>
-										<checkbox type="checkbox" class="cart_checkbox" :value="value" :checked="allpicks"></checkbox>
+										<checkbox type="checkbox" class="cart_checkbox" @click="alp == false"></checkbox>
 									</label>
 									
 								</span>
@@ -26,7 +26,7 @@
 		                    <li class="clearfloat">
 		                        <span>
 		                        	<label>
-		                        		<checkbox type="checkbox" class="cart_checkbox" :value="value" :checked="allpicks"></checkbox>
+		                        		<checkbox type="checkbox" class="cart_checkbox" @click="alp == false"></checkbox>
 		                        	</label>
 		                        	
 		                        </span>
@@ -59,12 +59,12 @@
 	export default {
 		data() {
 			return {
-				allpicks: false
+				
 			}
 		},
 		methods: {
-			allpicks(){
-				this.allpicks = !this.allpicks
+			alp(){
+				this.alp = !this.alp
 			}
 		}
 	}

@@ -31,11 +31,7 @@
   color: white;
   border-radius: 0 0 150rpx 150rpx;
 }
-.line {
-  height: 56rpx;
-  background-color: #b50e03;
-}
-.head {
+.bg .head {
   height: 200rpx;
   display: flex;
   flex-direction: column;
@@ -156,5 +152,9 @@
   display: flex;
   justify-content: center;
   margin-top: 40rpx;
+}
+.line {
+  height: 56rpx;
+  background-color: #b50e03;
 }
 
