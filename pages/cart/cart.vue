@@ -45,9 +45,9 @@
 		            </view>
 		        </view>
 		        <view class="cart_header">
-					<span>商品总数<em>2</em>件</span>
+					<span>商品总数<em style="display: inline;">2</em>件</span>
 		           
-		            <span>￥：<strong>1,826,589.00</strong></span>
+		            <span>￥：<strong style="display: inline;">1,826,589.00</strong></span>
 		            <button type="button" style="line-height: 35px;margin-right: 10px;">结算</button>
 		        </view>
 		    </view>
