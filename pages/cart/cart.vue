@@ -14,7 +14,7 @@
 								</span>
 								<view style="width: 180rpx;">
 									<a href="" class="cart_img" style="width: 150rpx;height: 100rpx;"><image src="../../static/素材/heima_shop_server/src/public/upload/201504/16/7.jpg"></image> </a>
-									<a href="" class="cart_title">HTML5基础入门</a>
+									<a href="" class="cart_title">商品1号</a>
 								</view>
 		                       
 		                        <view style="width: 150rpx;">
@@ -32,7 +32,7 @@
 		                        </span>
 								<view style="width: 180rpx;">
 									<a href="" class="cart_img" style="width: 150rpx;height: 100rpx;"><image src="../../static/素材/heima_shop_server/src/public/upload/201504/16/3.jpg" mode=""></image> </a>
-									<a href="" class="cart_title">JavaScript核心知识讲解</a>
+									<a href="" class="cart_title">商品2号</a>
 								</view>
 		                        
 		                        <view style="width: 150rpx;">
