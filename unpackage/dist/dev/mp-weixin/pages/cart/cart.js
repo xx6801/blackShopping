@@ -223,6 +223,13 @@ exports.default = void 0;
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 function product(name, img, price, qty, checked) {
   this.name = name;
@@ -234,7 +241,7 @@ function product(name, img, price, qty, checked) {
 var _default = {
   data: function data() {
     return {
-      list: [new product("豪华餐桌1", "../../static/hmlogo.png", 27.8), new product("豪华餐桌2", "../../static/hmlogo.png", 66.6, 2), new product("豪华餐桌3", "../../static/hmlogo.png", 2.99, 5), new product("豪华餐桌4", "../../static/hmlogo.png", 25.2), new product("豪华餐桌4", "../../static/hmlogo.png", 87.8)]
+      list: [new product("华为（HUAWEI）荣耀6Plus 16G双4G版", "http://localhost:8082/upload/201504/20/thumb_201504200119256512.jpg", 2195), new product("小米（Mi）小米Note 16G双网通版", "http://localhost:8082/upload/201504/20/thumb_201504200119256514.jpg", 2199, 2), new product("尼康(Nikon)D3300套机（18-55mm f/3.5-5.6G VRII）（黑色）", "http://localhost:8082/upload/201504/20/thumb_201504200119256515.jpg", 4799, 5), new product("金士顿（Kingston） DataTraveler SE9 32GB 金属U盘", "http://localhost:8082/upload/201504/20/thumb_201504200119256519.jpg", 79), new product("惠普(HP) Officejet Pro 8610商用彩色喷墨一体机", "http://localhost:8082/upload/201504/20/thumb_201504200119256521.jpg", 1999)]
     };
   },
   computed: {
