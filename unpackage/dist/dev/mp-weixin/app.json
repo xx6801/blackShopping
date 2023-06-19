@@ -17,7 +17,9 @@
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "黑马商城",
     "navigationBarBackgroundColor": "#b50e03",
-    "backgroundColor": "#F8F8F8"
+    "backgroundColor": "#F8F8F8",
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "light"
   },
   "tabBar": {
     "selectedColor": "#b50e03",
